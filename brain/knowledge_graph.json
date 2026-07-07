@@ -1,0 +1,9 @@
+{
+  "nodes": [
+    {"id": "mcp-2026-07-28-stateless-spec", "title": "MCP 2026-07-28仕様はプロトコルをステートレス化し認可を強化する", "category": "MCP"},
+    {"id": "mcp-registry-live-service", "title": "MCP公式レジストリは実際に稼働しているサーバー発見サービスである", "category": "MCP"}
+  ],
+  "edges": [
+    {"from": "mcp-2026-07-28-stateless-spec", "to": "mcp-registry-live-service", "relation": "related"}
+  ]
+}
