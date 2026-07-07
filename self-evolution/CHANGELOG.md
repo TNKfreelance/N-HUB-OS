@@ -4,6 +4,17 @@
 
 **注記(2026-07-07)**: v1.0.0でリポジトリ全体を N-HUB → N-HUB-OS へリネーム・再構成した際、v0.1.0〜v0.6.0のエントリ内のパス表記(`Specification/` → `docs/`、`Skills/` → `skills/` 等)は現在の実際の場所を指すように機械的に更新した。各バージョン時点で実際に存在したファイル名・大文字小文字とは異なる場合があるが、内容(何を作ったか)自体は変更していない。
 
+## [1.4.0] - 2026-07-07
+
+### Added
+- brain/research/2026-07-07_github_claude-code-recent-releases.md — Claude Codeの直近リリース(v2.1.196〜v2.1.202)を実際にGitHub Releasesから収集(MCP以外の新しい対象領域への実運用拡大)
+- brain/verified/claude-code-2026-q3-updates.md — 独立4ソース(GitHub Releases・anthropic.com/news・platform.claude.com/docs・ai-tldr.dev)で裏取りできた2項目(Sonnet 5デフォルト化・バックグラウンドサブエージェント標準化)のみを検証済みへ昇格
+- articles/claude-code-2026-q3-updates.md — 上記の検証済み知識から記事下書きを作成(未検証の因果関係の主張は「推測」と明記し断定しなかった)
+
+### Verified
+- 収集した6項目のうち、独立裏取りできたのは2項目のみだったため、research note には「部分昇格」であることを明記し、残り4項目(組織デフォルトモデル・AskUserQuestion挙動変更・スタック形式slash-skill・動的ワークフローサイズ)はGitHub単独ソースのまま未検証で残した(過剰な断定を避けた)
+- SecondBrainの整合性チェックを実データ(research 3件・verified 3件・graph node3/edge1)に対して実行。ノード/ファイルの1:1対応・昇格リンクとも問題なし
+
 ## [1.3.0] - 2026-07-07
 
 ### Changed(破壊的変更)

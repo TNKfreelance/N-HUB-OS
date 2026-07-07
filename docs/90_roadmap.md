@@ -1,6 +1,6 @@
 # 90. Roadmap
 
-## 現在地: v1.3.0(10skill実装済み + GitHub公開 + ドキュメントサイト稼働中)
+## 現在地: v1.4.0(10skill実装済み + GitHub公開 + ドキュメントサイト稼働中 + 実運用対象領域をMCP以外にも拡大)
 
 - GitHubリポジトリ(パブリック): https://github.com/TNKfreelance/N-HUB-OS
 - ドキュメントサイト(GitHub Pages、稼働確認済み): https://tnkfreelance.github.io/N-HUB-OS/
@@ -13,7 +13,8 @@
 - `docs/50_bootstrap.md` — 再現手順
 - Research / Verification / Knowledge / SkillBuilder / SecondBrain / MCPBuilder / Writer / Automation / Publisher / Analytics の10skillすべて実装・実地テスト・独立監査済み
 - GitHubをSecond Brainの実際の保管庫として稼働(実データをpush済み)
-- `docs/`から生成したドキュメントサイトをGitHub Pagesで実際に公開・稼働確認済み
+- `docs/`から生成したドキュメントサイトをGitHub Pagesで実際に公開・稼働確認済み(構想文のタグライン反映済み)
+- 対象領域をMCPから「Claude Code」へ拡大し、Research→Verification→Knowledge→Writerのループを実データで再実行(下記マイルストーン13参照)
 
 このバージョンで**意図的に未実装**のもの(段階的構築、[00_constitution.md](00_constitution.md) 原則3):
 
@@ -34,12 +35,13 @@
 10. **Publisher skill** — [skills/publisher/SKILL.md](../skills/publisher/SKILL.md)(2026-07-07)。公開前チェックリストを実際にN-HUB-OSリポジトリ全体(GitHub公開予定)に対して適用(引用元明記・機密情報スキャン・裏取り根拠の確認)。公開自体はオーナーの明示承認を経てから実施(下記参照)。
 11. **Analytics skill** — [skills/analytics/SKILL.md](../skills/analytics/SKILL.md)(2026-07-07)。実際に`articles/publish_log.md`の有無を確認したところ公開実績が存在しなかったため、「分析対象なし」と正直に報告(架空のデータを作らなかった)。
 12. **GitHubへの実公開 + ドキュメントサイト稼働**(2026-07-07)。`git init`からプライベートリポジトリ作成・push、その後GitHub Pagesがプライベートリポジトリの無料プランでは使えないという実際の制約に当たったためオーナーに選択肢を提示し、パブリックへの切り替えとPages有効化の承認を得た。実際にPagesのビルドステータスが`built`になり、トップページと個別ページの両方がHTMLとして正しくレンダリングされることをWebFetchで確認済み。詳細は [self-evolution/CHANGELOG.md](../self-evolution/CHANGELOG.md) の v1.3.0 エントリ。
+13. **実運用の対象領域拡大(Claude Code)**(2026-07-07)。MCP以外の初めての実運用対象として、Research→Verification→Knowledge→Writerのループを「Claude Code」で実行。GitHub Releasesから6項目を収集したが、独立裏取りできたのは2項目(Sonnet 5デフォルト化・バックグラウンドサブエージェント標準化)のみだったため、その2項目だけを正直に検証済みへ昇格し記事化。残り4項目は単独ソースのまま未検証で保持した。詳細は [self-evolution/CHANGELOG.md](../self-evolution/CHANGELOG.md) の v1.4.0 エントリ。
 
 いずれも skill-creator のガイドに沿って作成。低リスク・仕様が明確なタスクのため、フルの eval/ベンチマークループは省略し、独立監査官によるレビューで代替した([self-evolution/CHANGELOG.md](../self-evolution/CHANGELOG.md) 参照)。
 
 ## 次のマイルストーン候補(優先順位順、あくまで目安)
 
-1. 実運用しながら各skillを改善する(第2期)
+1. 実運用の対象領域をさらに拡大する(AI Agent / Browser Automation / AI Coding / AI SaaS / Immersive Web など、[01_vision.md](01_vision.md) の対象領域を順次)
 2. MCP サーバーの実導入(必要が生じた時点で MCPBuilder skill を使って再評価)
 
 ## 進め方
