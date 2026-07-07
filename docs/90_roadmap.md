@@ -1,6 +1,9 @@
 # 90. Roadmap
 
-## 現在地: v1.2.0(10skillすべて実装済み)
+## 現在地: v1.3.0(10skill実装済み + GitHub公開 + ドキュメントサイト稼働中)
+
+- GitHubリポジトリ(パブリック): https://github.com/TNKfreelance/N-HUB-OS
+- ドキュメントサイト(GitHub Pages、稼働確認済み): https://tnkfreelance.github.io/N-HUB-OS/
 
 このバージョンで完成しているもの:
 
@@ -9,12 +12,13 @@
 - トップレベルディレクトリ: `docs/ spec/ templates/ bootstrap/ skills/ mcp/ brain/ articles/ automation/ self-evolution/ examples/`
 - `docs/50_bootstrap.md` — 再現手順
 - Research / Verification / Knowledge / SkillBuilder / SecondBrain / MCPBuilder / Writer / Automation / Publisher / Analytics の10skillすべて実装・実地テスト・独立監査済み
+- GitHubをSecond Brainの実際の保管庫として稼働(実データをpush済み)
+- `docs/`から生成したドキュメントサイトをGitHub Pagesで実際に公開・稼働確認済み
 
 このバージョンで**意図的に未実装**のもの(段階的構築、[00_constitution.md](00_constitution.md) 原則3):
 
 - MCP サーバーの実導入(現時点で `mcp/registry.md` に導入済みのMCPはN-Link本体のみ。候補評価は実施済み、下記参照)
 - 自動化ワークフローの実際のスケジュール有効化(定義のみ完了、有効化はオーナー承認待ち)
-- 実際の外部公開実績(公開前チェックリストの適用は実施済み、下記参照)
 
 ## 実装済みマイルストーン
 
@@ -29,13 +33,14 @@
 9. **Automation skill** — [skills/automation/SKILL.md](../skills/automation/SKILL.md)(2026-07-07)。SecondBrain整合性チェックの定期実行ワークフロー定義[automation/secondbrain-integrity-check.md](../automation/secondbrain-integrity-check.md)を作成。実際のスケジュール有効化は行わず「defined」ステータスに留め、有効化にはオーナー承認が必要である旨を明記。
 10. **Publisher skill** — [skills/publisher/SKILL.md](../skills/publisher/SKILL.md)(2026-07-07)。公開前チェックリストを実際にN-HUB-OSリポジトリ全体(GitHub公開予定)に対して適用(引用元明記・機密情報スキャン・裏取り根拠の確認)。公開自体はオーナーの明示承認を経てから実施(下記参照)。
 11. **Analytics skill** — [skills/analytics/SKILL.md](../skills/analytics/SKILL.md)(2026-07-07)。実際に`articles/publish_log.md`の有無を確認したところ公開実績が存在しなかったため、「分析対象なし」と正直に報告(架空のデータを作らなかった)。
+12. **GitHubへの実公開 + ドキュメントサイト稼働**(2026-07-07)。`git init`からプライベートリポジトリ作成・push、その後GitHub Pagesがプライベートリポジトリの無料プランでは使えないという実際の制約に当たったためオーナーに選択肢を提示し、パブリックへの切り替えとPages有効化の承認を得た。実際にPagesのビルドステータスが`built`になり、トップページと個別ページの両方がHTMLとして正しくレンダリングされることをWebFetchで確認済み。詳細は [self-evolution/CHANGELOG.md](../self-evolution/CHANGELOG.md) の v1.3.0 エントリ。
 
 いずれも skill-creator のガイドに沿って作成。低リスク・仕様が明確なタスクのため、フルの eval/ベンチマークループは省略し、独立監査官によるレビューで代替した([self-evolution/CHANGELOG.md](../self-evolution/CHANGELOG.md) 参照)。
 
 ## 次のマイルストーン候補(優先順位順、あくまで目安)
 
-1. GitHubへの実際の公開・GitHub Pagesでのドキュメントサイト公開(進行中、下記参照)
-2. 実運用しながら各skillを改善する(第2期)
+1. 実運用しながら各skillを改善する(第2期)
+2. MCP サーバーの実導入(必要が生じた時点で MCPBuilder skill を使って再評価)
 
 ## 進め方
 

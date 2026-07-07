@@ -2,6 +2,9 @@
 
 AIを管理するAIではなく、**知識を管理するOS**。AI(Claude Code, Gemini CLI, Codex CLI, Cursor, GitHub Copilot, OpenAI, Google Antigravity など)は入れ替わっても、蓄積した知識と判断基準は変わらずに使えることを目指す構想([docs/00_constitution.md](docs/00_constitution.md))。
 
+- リポジトリ: https://github.com/TNKfreelance/N-HUB-OS
+- ドキュメントサイト: https://tnkfreelance.github.io/N-HUB-OS/
+
 現時点の実装は Claude Code 上で動作し、`n-link-brain`(N-Link)MCP をガバナンス層として利用する。他ツールへの対応は方針のみ([docs/70_cross_tool_extensibility.md](docs/70_cross_tool_extensibility.md))。
 
 ## まず読むもの

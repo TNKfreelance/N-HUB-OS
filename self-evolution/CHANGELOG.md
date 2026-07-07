@@ -4,6 +4,18 @@
 
 **注記(2026-07-07)**: v1.0.0でリポジトリ全体を N-HUB → N-HUB-OS へリネーム・再構成した際、v0.1.0〜v0.6.0のエントリ内のパス表記(`Specification/` → `docs/`、`Skills/` → `skills/` 等)は現在の実際の場所を指すように機械的に更新した。各バージョン時点で実際に存在したファイル名・大文字小文字とは異なる場合があるが、内容(何を作ったか)自体は変更していない。
 
+## [1.3.0] - 2026-07-07
+
+### Changed(破壊的変更)
+- リポジトリ https://github.com/TNKfreelance/N-HUB-OS を **プライベート → パブリック** に変更した。理由: GitHub Pagesはプライベートリポジトリでは無料プランで利用できないという実際のプラットフォーム制約に当たったため(APIで実際に`422: Your current plan does not support GitHub Pages`を確認)、オーナーに選択肢を提示した上で「公開に切り替えてPagesを有効化」という明示判断を得た。`brain/`の実データはMCPに関する技術情報のみで機密情報・個人情報は含まれないことを事前にスキャンで確認済み(v1.2.0のPublisher機能テストで実施したgrepスキャン参照)
+
+### Added
+- `docs/_config.yml`、`docs/index.md` — GitHub Pages(Jekyll)用の設定とホームページ
+- GitHub Pagesを実際に有効化: https://tnkfreelance.github.io/N-HUB-OS/ (source: main branch /docs)
+
+### Verified
+- 実際にAPIでPagesを有効化し、ビルドステータスが`built`になったことを確認。さらにトップページと個別ドキュメントページ(00_constitution)の両方を実際にWebFetchで取得し、正しくHTMLとしてレンダリングされていること(404でも生Markdownでもないこと)を確認した
+
 ## [1.2.0] - 2026-07-07
 
 ### Added
