@@ -2,9 +2,11 @@
   "nodes": [
     {"id": "mcp-2026-07-28-stateless-spec", "title": "MCP 2026-07-28仕様はプロトコルをステートレス化し認可を強化する", "category": "MCP"},
     {"id": "mcp-registry-live-service", "title": "MCP公式レジストリは実際に稼働しているサーバー発見サービスである", "category": "MCP"},
-    {"id": "claude-code-2026-q3-updates", "title": "Claude Codeは2026年7月時点でSonnet 5デフォルト化とバックグラウンドサブエージェント標準化が進んでいる", "category": "Claude Code"}
+    {"id": "claude-code-2026-q3-updates", "title": "Claude Codeは2026年7月時点でSonnet 5デフォルト化とバックグラウンドサブエージェント標準化が進んでいる", "category": "Claude Code"},
+    {"id": "gemini-cli-mcp-support", "title": "Gemini CLIはGoogle公式のオープンソース端末型AIエージェントで、MCPに対応している", "category": "AI Agent"}
   ],
   "edges": [
-    {"from": "mcp-2026-07-28-stateless-spec", "to": "mcp-registry-live-service", "relation": "related"}
+    {"from": "mcp-2026-07-28-stateless-spec", "to": "mcp-registry-live-service", "relation": "related"},
+    {"from": "gemini-cli-mcp-support", "to": "mcp-2026-07-28-stateless-spec", "relation": "related"}
   ]
 }

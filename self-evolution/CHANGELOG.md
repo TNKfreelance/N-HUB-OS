@@ -4,6 +4,16 @@
 
 **注記(2026-07-07)**: v1.0.0でリポジトリ全体を N-HUB → N-HUB-OS へリネーム・再構成した際、v0.1.0〜v0.6.0のエントリ内のパス表記(`Specification/` → `docs/`、`Skills/` → `skills/` 等)は現在の実際の場所を指すように機械的に更新した。各バージョン時点で実際に存在したファイル名・大文字小文字とは異なる場合があるが、内容(何を作ったか)自体は変更していない。
 
+## [1.5.0] - 2026-07-07
+
+### Added
+- brain/research/2026-07-07_github_gemini-cli-mcp-support.md、brain/verified/gemini-cli-mcp-support.md — 3つ目の実運用対象領域(AI Agent)。GoogleのGemini CLIがMCPに対応していることをGitHub公式リポジトリ+Google Cloud公式ドキュメントの独立2ソースで確認し昇格
+- articles/gemini-cli-mcp-support.md — 上記から記事下書きを作成。プロトコルレベルの接点と、Skill仕様レベルの互換性はまだ未検証であることを明確に区別して記述
+- knowledge_graph.jsonに新規ノード追加、MCP仕様ノードとの`related`エッジを追加(GeminiCLIのMCP対応という実際の内容的関連に基づく、根拠のある関連付け)
+
+### Changed
+- docs/70_cross_tool_extensibility.md — 上記の実データを踏まえ、「Gemini CLIがすでにMCP対応している」という事実を追記(ただしSkill仕様レベルの互換性は未検証のままと明記し、過度な期待を持たせないようにした)
+
 ## [1.4.0] - 2026-07-07
 
 ### Added

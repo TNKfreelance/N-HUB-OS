@@ -1,6 +1,6 @@
 # 90. Roadmap
 
-## 現在地: v1.4.0(10skill実装済み + GitHub公開 + ドキュメントサイト稼働中 + 実運用対象領域をMCP以外にも拡大)
+## 現在地: v1.5.0(10skill実装済み + GitHub公開 + ドキュメントサイト稼働中 + 実運用対象領域をMCP/Claude Code/AI Agentの3領域に拡大)
 
 - GitHubリポジトリ(パブリック): https://github.com/TNKfreelance/N-HUB-OS
 - ドキュメントサイト(GitHub Pages、稼働確認済み): https://tnkfreelance.github.io/N-HUB-OS/
@@ -36,12 +36,13 @@
 11. **Analytics skill** — [skills/analytics/SKILL.md](../skills/analytics/SKILL.md)(2026-07-07)。実際に`articles/publish_log.md`の有無を確認したところ公開実績が存在しなかったため、「分析対象なし」と正直に報告(架空のデータを作らなかった)。
 12. **GitHubへの実公開 + ドキュメントサイト稼働**(2026-07-07)。`git init`からプライベートリポジトリ作成・push、その後GitHub Pagesがプライベートリポジトリの無料プランでは使えないという実際の制約に当たったためオーナーに選択肢を提示し、パブリックへの切り替えとPages有効化の承認を得た。実際にPagesのビルドステータスが`built`になり、トップページと個別ページの両方がHTMLとして正しくレンダリングされることをWebFetchで確認済み。詳細は [self-evolution/CHANGELOG.md](../self-evolution/CHANGELOG.md) の v1.3.0 エントリ。
 13. **実運用の対象領域拡大(Claude Code)**(2026-07-07)。MCP以外の初めての実運用対象として、Research→Verification→Knowledge→Writerのループを「Claude Code」で実行。GitHub Releasesから6項目を収集したが、独立裏取りできたのは2項目(Sonnet 5デフォルト化・バックグラウンドサブエージェント標準化)のみだったため、その2項目だけを正直に検証済みへ昇格し記事化。残り4項目は単独ソースのまま未検証で保持した。詳細は [self-evolution/CHANGELOG.md](../self-evolution/CHANGELOG.md) の v1.4.0 エントリ。
+14. **実運用の対象領域拡大(AI Agent)**(2026-07-07)。GoogleのGemini CLIがMCPに対応していることをGitHub公式リポジトリ+Google Cloud公式ドキュメントの独立2ソースで確認し検証済みへ昇格。この発見を[docs/70_cross_tool_extensibility.md](70_cross_tool_extensibility)に反映(Skill仕様レベルの互換性は依然未検証と明記)。knowledge_graph.jsonに根拠のある`related`エッジ(MCP仕様ノードとの関連)を追加。詳細は [self-evolution/CHANGELOG.md](../self-evolution/CHANGELOG.md) の v1.5.0 エントリ。
 
 いずれも skill-creator のガイドに沿って作成。低リスク・仕様が明確なタスクのため、フルの eval/ベンチマークループは省略し、独立監査官によるレビューで代替した([self-evolution/CHANGELOG.md](../self-evolution/CHANGELOG.md) 参照)。
 
 ## 次のマイルストーン候補(優先順位順、あくまで目安)
 
-1. 実運用の対象領域をさらに拡大する(AI Agent / Browser Automation / AI Coding / AI SaaS / Immersive Web など、[01_vision.md](01_vision.md) の対象領域を順次)
+1. 実運用の対象領域をさらに拡大する(Browser Automation / AI Coding / AI SaaS / Immersive Web など、[01_vision.md](01_vision.md) の残りの対象領域を順次)
 2. MCP サーバーの実導入(必要が生じた時点で MCPBuilder skill を使って再評価)
 
 ## 進め方
