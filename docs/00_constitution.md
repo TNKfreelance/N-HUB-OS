@@ -1,5 +1,9 @@
 # 00. Constitution
 
+> AIを管理するAIではない。知識を管理するOSである。
+> AIが変わっても、知識は変わらない。
+> 知識を資産に変える。検証を標準化する。成果物を自動生成する。知識を継続的に進化させる。
+
 ## N-HUB-OS が存在する理由
 
 海外発の一次情報(Claude Code, MCP, AI Agent, Browser Automation, AI Video Generation, AI Coding, AI SaaS, Immersive Web など)は流量が多く鮮度が命だが、そのままでは「見た」だけで終わり資産にならない。N-HUB-OS は、収集した情報を **検証 → 構造化 → 再利用可能な成果物(skill / MCP / 記事 / 動画 / 自動化ワークフロー)** に変換し続けるための作業場である。
